@@ -1,0 +1,60 @@
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: true;
+}    
+
+@keyframes spinning-grad {
+    from {--angle: 0deg;}
+    to {--angle: 360deg;}
+}
+        
+@keyframes bgAnim{
+    /* cha cha real smooth */
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 128px 128px;
+    }
+}
+        
+.box {
+    /* --startDeg: 0; */
+    position: relative; 
+    width: 80%;
+    maxwidth: 500px;
+    margin: 8% auto 8% auto;
+    overflow: scroll;
+    background: #ffffff;
+    padding: 10px;
+    text-align: center;
+    opacity: 1;
+    z-index: 1;
+    font-family: "roboto";
+    border-image: repeating-conic-gradient(
+        from var(--angle),
+        #00ff00 0%,
+        #008000 10%,
+        #00ff00 20%
+    ) 1;
+    animation: spinning-grad 15s linear infinite;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.embed {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+        
+body {
+    background-image: url("/resources/bg.gif");
+    background-repeat: repeat;
+    animation: bgAnim 5s linear infinite;
+}
+        
+article {
+    background-color: #9cff9c;
+    padding: 5px;
+}
