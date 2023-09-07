@@ -23,7 +23,7 @@
     /* --startDeg: 0; */
     position: relative; 
     width: 80%;
-    maxwidth: 250px;
+    max-width: 750px;
     margin: 8% auto 8% auto;
     overflow: scroll;
     background: #ffffff;
@@ -62,5 +62,6 @@ body {
         
 article {
     background-color: #9cff9c;
+    font-weight: 500;
     padding: 5px;
 }
