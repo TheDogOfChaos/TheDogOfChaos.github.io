@@ -86,7 +86,7 @@ h1 {
     text-align: center;
 }
 
-article {
+section {
     background-color: #9cff9c;
     font-weight: 500;
     padding: 5px;
@@ -126,7 +126,7 @@ button[onclick^="history.back()"]::before {
 }
 
 .spoiler {
-	  filter: blur(4.5px);
+	  filter: blur(5.5px);
   	transition: filter .4s;
 }
 .spoiler:hover {
