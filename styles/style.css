@@ -70,10 +70,7 @@
     aspect-ratio: 16 / 9;
     width: 100%;
 }
-.disabled {
-    pointer-events:none;
-    color:red;
-}
+
 body {
     background-image: url("../resources/backgrounds/tilableBG4.png");
     background-repeat: repeat;
