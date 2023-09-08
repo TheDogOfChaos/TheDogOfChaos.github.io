@@ -18,20 +18,36 @@
         background-position: 128px 128px;
     }
 }
-        
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+/* slow animation when reduced-motion is set */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-content {
+    animation: scroll 60s linear infinite;
+  }
+}
+
 .box {
-    /* --startDeg: 0; */
+    --startDeg: 0;
     position: relative; 
     width: 80%;
-    maxwidth: 250px;
+    max-width: 750px;
     margin: 8% auto 8% auto;
-    overflow: scroll;
-    background: #ffffff;
+    overflow: none;    
     padding: 10px;
-    text-align: center;
+    text-align: left;
     opacity: 1;
     z-index: 1;
-    font-family: "roboto";
+    font-family: "Jura", sans-serif;
+    background: #ffffff;
     border-image: repeating-conic-gradient(
         from var(--angle),
         #00ff00 0%,
@@ -40,21 +56,99 @@
     ) 1;
     animation: spinning-grad 15s linear infinite;
     border-width: 10px;
-    border-style: solid;
+    border-style: double;
+}
+
+.box::-webkit-scrollbar {
+  display: none;
 }
 
 .embed {
     aspect-ratio: 16 / 9;
     width: 100%;
 }
-        
-body {
-    background-image: url("/resources/bg.gif");
-    background-repeat: repeat;
-    animation: bgAnim 5s linear infinite;
+.disabled {
+    pointer-events:none;
+    color:red;
 }
-        
+body {
+    background-image: url("../resources/backgrounds/tilableBG4.png");
+    background-repeat: repeat;
+    animation: bgAnim 10s linear infinite;
+    overflow-x: none;
+    overflow-y: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
 article {
     background-color: #9cff9c;
     padding: 5px;
+    font-weight: 500;
 }
+
+hr {
+    border: 2.5px dashed #80c080;
+}
+
+a {
+    color: #008000;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    border-image: repeating-conic-gradient(
+        from var(--angle),
+        #00ff00 0%,
+        #008000 10%,
+        #00ff00 20%
+    ) 1; /* Green */
+}
+
+button[onclick^="history.back()"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-right: 2px;
+  background-image: url("../resources/icons/back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.spoiler {
+	  filter: blur(4.5px);
+  	transition: filter .4s;
+}
+.spoiler:hover {
+  	filter: blur(0px);
+}
+
+.marquee {
+    --gap: 1rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+}
+
+.marquee-content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    animation: scroll 30s linear infinite;
+    list-style-type: none;
+}
+/* .marquee-content:hover {
+    animation-play-state: paused;
+} */
