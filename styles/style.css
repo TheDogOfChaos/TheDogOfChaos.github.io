@@ -57,6 +57,9 @@
     animation: spinning-grad 15s linear infinite;
     border-width: 10px;
     border-style: double;
+    border-style: solid;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .box::-webkit-scrollbar {
@@ -85,6 +88,7 @@ h1 {
 
 article {
     background-color: #9cff9c;
+    font-weight: 500;
     padding: 5px;
     font-weight: 500;
 }
