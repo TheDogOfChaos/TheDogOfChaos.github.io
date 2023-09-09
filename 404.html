@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>404: Not found</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
-    <div class="box">
-      <h1>Error 404 :(</h1>
-      <hr>
-      You're lost.<br>
-      <button onclick="history.back()">Go Back?</button>
-    </div>
-  </body>
+    <head>
+        <title>404: Not found</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="https://kit.fontawesome.com/3f18ce77ed.js" crossorigin="anonymous"></script>
+    <script src="/scripts/usefulFuncs.js"></script>
+    </head>
+    <body>
+        <div class="box">
+            <button id="darkToggle" onclick="darkToggle()">
+                <i id="light" class="fas fa-sun"></i>
+                <i id="dark" class="fas fa-moon" style="display:none;"></i>
+           </button>
+           <h1>Error 404 :(</h1>
+           <hr>
+           You're lost.<br>
+           <button onclick="history.back()">
+               Go Back?
+           </button>
+        </div>
+    </body>
 </html>
