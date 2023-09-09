@@ -10,7 +10,7 @@ function darkLoad() {
         document.getElementById("dark").style.display = "none";
     } else {
         // dark mode
-        root.style.cssText = "--box-bgColor: #202020;--rConGradLight: #ff00ff;--rConGradDark: #800080;--textColor: #ffffff;--buttonColor: #404040;--dim-bg: 0.75;--section-bgColor: #630063;--hr-color: #c080c0;--link-color: #c000c0;";
+        root.style.cssText = "--box-bgColor: #353535;--rConGradLight: #ff00ff;--rConGradDark: #800080;--textColor: #ffffff;--buttonColor: #404040;--dim-bg: 0.75;--section-bgColor: #630063;--hr-color: #c080c0;--link-color: #c000c0;";
         document.getElementById("light").style.display = "none";
         document.getElementById("dark").style.display = "block";
     }
