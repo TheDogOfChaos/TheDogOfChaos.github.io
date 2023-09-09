@@ -8,9 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/3f18ce77ed.js" crossorigin="anonymous"></script>
+    <script src="/scripts/usefulFuncs.js"></script>
   </head>
-  <body>
+  <body onload="darkLoad()">
       <div class="box" style="margin-bottom:15px">
+          <button id="darkToggle" onclick="darkToggle()">
+              <i id="light" class="fas fa-sun"></i>
+              <i id="dark" class="fas fa-moon"></i>
+          </button>
           <h1>
               TheDogOfChaos
           </h1>
