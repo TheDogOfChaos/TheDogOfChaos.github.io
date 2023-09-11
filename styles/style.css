@@ -78,6 +78,15 @@
     width: 100%;
 }
 
+.shelved {
+    color:#808080;
+}
+.abandoned {
+    color:red;
+}
+.inprogress {
+    color:yellow;
+}
 button {
     background-color: var(--buttonColor);
     color: var(--text-color);
