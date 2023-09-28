@@ -67,7 +67,7 @@
         var(--rConGradLight) 20%
     ) 1;
     color: var(--textColor);
-    animation: spinning-grad 15s linear infinite;
+    animation: spinning-grad 60s linear infinite;
     border-width: 10px;
     border-style: solid;
 }
@@ -113,7 +113,6 @@ section {
     background-color: var(--section-bgColor);
     font-weight: 500;
     padding: 5px;
-    font-weight: 500;
 }
 
 hr {
@@ -167,3 +166,12 @@ button[onclick^="history.back()"]::before {
 /* .marquee-content:hover {
     animation-play-state: paused;
 } */
+
+.licence {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 7.5px;
+}
+.licence::after {
+    content: '© 2023 TheDogOfChaos. All Rights Reserved.';
+}
