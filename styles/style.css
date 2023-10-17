@@ -100,7 +100,7 @@ body {
         ),
         url("../resources/backgrounds/tilableBG4.png");
     background-repeat: repeat;
-    animation: bgAnim 10s linear infinite;
+    /* animation: bgAnim 10s linear infinite; */
     overflow-x: none;
     overflow-y: auto;
 }
