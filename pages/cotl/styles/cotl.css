@@ -1,0 +1,9 @@
+.dialogBox {
+    outline: 5px solid black;
+    outline-offset: 5px;
+    width: 60%;
+}
+
+.lamb {
+    outline-color: red
+}
