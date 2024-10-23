@@ -1,7 +1,9 @@
+/* Dialog box stuff */
 .dialogBox {
     outline: 5px solid black;
-    outline-offset: 5px;
     width: 60%;
+    padding: 1%;
+    margin: auto;
 }
 
 .lamb {
