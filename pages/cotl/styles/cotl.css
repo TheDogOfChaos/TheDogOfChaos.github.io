@@ -35,9 +35,9 @@
 
 .dialogText {
     font-size: 14px;
-    font-kerning: ;
     line-height: 1.5;
 }
+
 .dialogPortrait {
     width: 80px;
     height: 80px;
@@ -52,4 +52,6 @@
     color: #c00000;
 }
 
-
+.narinder{
+    border-color: darkred;
+}
