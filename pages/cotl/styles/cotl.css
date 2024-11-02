@@ -1,11 +1,48 @@
+@font-face {
+    font-family: RobotoMono;
+    src: url(/resources/fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: EvilDead;
+    src: url(/resources/fonts/EVILDEAD.ttf);
+}
+
+.cotl {
+    background-color: black;
+    color: white;
+    font-family: RobotoMono;
+}
+.dialogTitle {
+
+}
 /* Dialog box stuff */
 .dialogBox {
-    outline: 5px solid black;
+    border: 5px solid black;
+    border-radius: 10px;
     width: 60%;
     padding: 1%;
     margin: auto;
+    display: flex;
+    background-color: #111;
+}
+.dialogText {
+    font-size: 14px;
+    font-kerning: ;
+    line-height: 1.5;
+}
+.dialogPortrait {
+    width: 80px;
+    height: 80px;
+    margin-right: 16px;
+    background-size: cover;
 }
 
 .lamb {
-    outline-color: red
+    border-color: red;
+    font-family: EvilDead;
+    font-size: 80%;
+    color: #c00000;
 }
+
+
