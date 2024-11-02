@@ -13,8 +13,14 @@
     color: white;
     font-family: RobotoMono;
 }
-.dialogTitle {
 
+.dialogTitle {
+    color:white;
+    font-family: RobotoMono;
+    position: absolute;
+    left:20%;
+    transform: translateY(-60px);
+    
 }
 /* Dialog box stuff */
 .dialogBox {
@@ -26,6 +32,7 @@
     display: flex;
     background-color: #111;
 }
+
 .dialogText {
     font-size: 14px;
     font-kerning: ;
