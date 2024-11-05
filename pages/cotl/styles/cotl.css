@@ -11,8 +11,9 @@
     font-size: initial;
     position: absolute;
     left:20%;
-    transform: translateY(-60px);
+    transform: translateY(-65px);
 }
+
 .dialogBox {
     border: 5px solid black;
     border-radius: 10px;
