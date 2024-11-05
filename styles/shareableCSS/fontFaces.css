@@ -1,0 +1,13 @@
+@font-face {
+    font-family: RobotoMono;
+    src: url(/resources/fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: EvilDead;
+    src: url(/resources/fonts/EVILDEAD.ttf);
+}
+@font-face {
+    font-family: Pacifico;
+    src: url(/resources/fonts/Pacifico-Regular.ttf);
+}

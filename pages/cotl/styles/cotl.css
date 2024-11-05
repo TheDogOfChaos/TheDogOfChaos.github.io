@@ -1,34 +1,25 @@
-@font-face {
-    font-family: RobotoMono;
-    src: url(/resources/fonts/RobotoMono-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: EvilDead;
-    src: url(/resources/fonts/EVILDEAD.ttf);
-}
-
 .cotl {
     background-color: black;
     color: white;
     font-family: RobotoMono;
 }
 
+/* Basic dialog box stuff */
 .dialogTitle {
     color:white;
     font-family: RobotoMono;
+    font-size: initial;
     position: absolute;
     left:20%;
     transform: translateY(-60px);
-    
 }
-/* Dialog box stuff */
 .dialogBox {
     border: 5px solid black;
     border-radius: 10px;
     width: 60%;
     padding: 1%;
     margin: auto;
+    margin-bottom: 4%;
     display: flex;
     background-color: #111;
 }
@@ -43,8 +34,10 @@
     height: 80px;
     margin-right: 16px;
     background-size: cover;
+    border: 2px #222 solid;
 }
 
+/* The Lamb */
 .lamb {
     border-color: red;
     font-family: EvilDead;
@@ -52,6 +45,17 @@
     color: #c00000;
 }
 
-.narinder{
-    border-color: darkred;
+.dialogBox.lamb > .dialogPortrait.neutral{
+    background-image: url(../resources/Lambs_Icon.png);
+}
+
+/* Chemach */
+.chemach{
+    border-color:#52a8d5;
+    font-family: Pacifico;
+    color: #003d73;
+}
+
+.dialogBox.chemach > .dialogPortrait.neutral{
+    background-image: url(../resources/Chemach.png);
 }
