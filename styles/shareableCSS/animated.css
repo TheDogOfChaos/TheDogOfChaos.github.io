@@ -120,13 +120,12 @@
 
 .wavy span{
     animation: wavy 2s ease-in-out infinite;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .animateWord {
-    display: inline-block;
+    display: inline-flex;
     position: relative;
-    letter-spacing: -2px;
     margin-left: 4px;
     margin-right: 4px;
 }
