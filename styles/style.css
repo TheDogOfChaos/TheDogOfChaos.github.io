@@ -173,5 +173,7 @@ button[onclick^="history.back()"]::before {
     font-size: 7.5px;
 }
 .licence::after {
-    content: '© 2023 TheDogOfChaos. All Rights Reserved.';
+    color: #ffffff;
+    content: '© 2025 TheDogOfChaos. All Rights Reserved.';
+    font-size: medium
 }
