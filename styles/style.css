@@ -8,7 +8,7 @@
     from {--angle: 0deg;}
     to {--angle: 360deg;}
 }
-        
+
 @keyframes bgAnim{
     /* cha cha real smooth */
     0% {
@@ -20,19 +20,19 @@
 }
 
 @keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
-  }
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
 }
 
 /* slow animation when reduced-motion is set */
 @media(prefers-reduced-motion: reduce) {
-  .marquee-content {
-    animation: scroll 60s linear infinite;
-  }
+    .marquee-content {
+        animation: scroll 60s linear infinite;
+    }
 }
 
 :root {
@@ -45,6 +45,20 @@
     --section-bgColor: #9cff9c;
     --hr-color: #80c080;
     --link-color: #008000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --box-bgColor:#353535;
+        --rConGradLight:#ff00ff;
+        --rConGradDark:#800080;
+        --textColor:#ffffff;
+        --buttonColor:#404040;
+        --dim-bg:0.75;
+        --section-bgColor:#630063;
+        --hr-color:#c080c0;
+        --link-color:#c000c0;
+    }
 }
 
 .box {
@@ -61,7 +75,7 @@
     font-family: "Jura", sans-serif;
     background-color: var(--box-bgColor);
     border-image: repeating-conic-gradient(
-        from var(--angle),
+    from var(--angle),
         var(--rConGradLight) 0%,
         var(--rConGradDark) 10%,
         var(--rConGradLight) 20%
@@ -94,11 +108,11 @@ button {
 
 body {
     background-image:
-        linear-gradient(
-          rgba(0, 0, 0, var(--dim-bg)), 
-          rgba(0, 0, 0, var(--dim-bg))
-        ),
-        url("../resources/backgrounds/tilableBG1.png");
+    linear-gradient(
+        rgba(0, 0, 0, var(--dim-bg)), 
+        rgba(0, 0, 0, var(--dim-bg))
+    ),
+    url("../resources/backgrounds/tilableBG1.png");
     background-repeat: repeat;
     animation: bgAnim 30s linear infinite;
     overflow-x: none;
@@ -124,23 +138,23 @@ a {
 }
 
 button[onclick^="history.back()"]::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  margin-right: 2px;
-  background-image: url("../resources/icons/back.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+    background-image: url("../resources/icons/back.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
 }
 
 .spoiler {
-	  filter: blur(5.5px);
-  	transition: filter .4s;
+    filter: blur(5.5px);
+    transition: filter .4s;
 }
 .spoiler:hover {
-  	filter: blur(0px);
+    filter: blur(0px);
 }
 
 .marquee {
@@ -164,7 +178,7 @@ button[onclick^="history.back()"]::before {
     list-style-type: none;
 }
 /* .marquee-content:hover {
-    animation-play-state: paused;
+animation-play-state: paused;
 } */
 
 .licence {
