@@ -15,7 +15,7 @@
         background-position: 0px 0px;
     }
     100% {
-        background-position: 100px 100px;
+        background-position: 128px 128px;
     }
 }
 
@@ -112,7 +112,7 @@ body {
         rgba(0, 0, 0, var(--dim-bg)), 
         rgba(0, 0, 0, var(--dim-bg))
     ),
-    url("../resources/backgrounds/tilableBG1.png");
+    url("../resources/backgrounds/tilableBG4.png");
     background-repeat: repeat;
     animation: bgAnim 30s linear infinite;
     overflow-x: none;
